@@ -1,0 +1,49 @@
+<div class="card text-center" >
+    <form>
+        <div class="card-header" style="height: 50px;">
+            <h4>User Registration</h4>
+        </div>
+        <div class="form-group" style="margin-top: 30px;">
+            <label for="firstName" style="width: 30%; padding-right: 19em; color: navy;">First Name</label>
+            <div style=" padding-left: 33em;">
+              <input type="text"  name="fName" class="form-control" formControlName = "fName" style="width: 40%;" id="firstName" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="lastName" style="width: 30%; padding-right: 19em; color: navy;">Last Name</label>
+            <div style=" padding-left: 33em;">
+              <input type="text"  name="lName" class="form-control" formControlName = "lName" style="width: 40%;" id="lastName" required />
+            </div>
+          </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1" style="width: 30%; padding-right: 18em; color: navy;">Email address</label>
+          <div style=" padding-left: 33em;">
+            <input type="email" name="email" class="form-control" formControlName = "email" style="width: 40%;" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+          </div>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" style="width: 30%; padding-right: 20em; color: navy;">Password</label>
+          <div style=" padding-left: 33em;">
+            <input type="password" name="pwd" class="form-control" formControlName = "pwd" style="width: 40%;" id="exampleInputPassword1" required />
+          </div>
+        </div >
+        <div class="form-group">
+            <label for="exampleInputPhone" style="width: 30%; padding-right: 17em; color: navy;">Mobile Number</label>
+            <div style=" padding-left: 33em;">
+              <input type="text" name="mobile" class="form-control" formControlName = "mobile" style="width: 40%;" id="exampleInputPhone" required />
+            </div>
+          </div >
+        <!--div class="form-group">
+            <label style="width: 30%; padding-right: 20em; color: navy;">Enter OTP</label>
+            <ng-otp-input #ngOtpInput [config]="{length:5}"></ng-otp-input>
+        </div>    
+        <div style="padding-bottom: 5%;">
+            <button style=" width: 10em; margin-left: 12em;" (click)="verifyNumber()" class="btn btn-primary">Verify</button>
+            &nbsp;&nbsp;
+        </div-->  
+        <button  type="submit" style=" width: 10em; margin-right:15em;" (click)="userRegister()" class="btn btn-primary">Register</button>  
+      </form>
+    </div>
+
+    

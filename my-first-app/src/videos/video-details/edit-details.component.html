@@ -1,0 +1,30 @@
+<form style="background-color:gainsboro; ">
+    <div class="form-group row">
+      <label for="inputTitle" class="col-sm-2 col-form-label" 
+      style="padding-left: 120px; padding-top: 30px;">Title</label>
+      <div class="col-sm-3" style="padding-top: 20px;">
+        <input type="text" [(ngModel)]="title" name="title" class="form-control" id="title" placeholder="Enter video title">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputChannel" class="col-sm-2 col-form-label"
+      style="padding-left: 120px;">Channel</label>
+      <div class="col-sm-3">
+        <input type="text" [(ngModel)]="channel" name="channel" class="form-control" id="formGroupExampleInput" placeholder="Enter channel name">
+      </div>
+    </div>
+    
+    
+    <div class="form-group row">
+      <div class="col-sm-4" style="padding-left: 232px; padding-bottom: 20px;">
+        <button type="submit" class="btn btn-outline-success" (click)=onSave()>Save</button>
+        &nbsp;
+        <button type="button" class="btn btn-outline-danger" (click)=onCancel()>Cancel</button>
+      </div>
+    </div>
+  </form>
+
+
+
+
+  
